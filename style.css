@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+}
+
+body{
+
+    background: white;
+}
+
+.nav-button{
+    padding-top: 10%;
+}
+
+#logo{
+    font-size: 30px;
+}
+
+.btn{
+    width: 200px;
+}
+
+/* background card */
+.container{
+    position: relative;
+    width: 600px;
+    height: 700px;
+    /* min-width: 300px;
+    min-height: 400px; */
+    background: #333;
+    border-radius: 20px;
+    padding: 40px 30px 30px;
+    box-shadow: 25px 25px 75px rgba(0,  0,  0, 0.25), 10px 10px 70px rgba(0,  0,  0, 0.25),
+    inset -5px -5px 15px rgba(0,  0,  0, 0.5),
+    inset 5px 5px 15px rgba(0,  0,  0, 0.5);
+}
+
+.calculator{
+    position: relative;
+    display: grid;
+}
+
+/* layar tampilan kalkulator */
+.calculator .value{
+    position: relative;
+    grid-column: span 4;
+    height: 100px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #a7af7c;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(0,  0,  0, 0.75);
+    text-align: right;
+    padding: 10px;
+    font-size: 2em;
+}
+
+span{
+    color: white;
+}
+
+/* tombol */
+.calculator span{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    background: linear-gradient(180deg, #2f2f2f, #3f3f3f);
+    box-shadow: inset -8px 0 8px rgba(0,  0,  0, 0.15),
+    inset 0 -8px 8px rgba(0,  0,  0, 0.25),
+    0 0 0 2px rgba(0,  0,  0, 0.75),
+    10px 20px 25px rgba(0,  0,  0, 0.4);
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(0,  0,  0, 0.1),
+    10px 5px 10px rgba(0,  0,  0, 0.15);
+    border-left: 1px solid #0004;
+}
+
+.calculator span i{
+    position: relative;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.calculator .clear{
+    grid-column: span 2;
+    width: 170px;
+    background:red;
+}
+
+.calculator .plus{
+    grid-row: span 2;
+    height: 170px;
+
+}
+
+@media screen and (max-width: 991.98px) {
+
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .container{
+        position: relative;
+        width: 40px;
+        height: 450px;
+        padding: 30px 15px 0px;
+        min-width: 300px;
+        min-height: 400px;
+    }
+
+    .calculator .value{
+        position: relative;
+        height: 60px;
+        width: 93%;
+
+    }
+  
+    .calculator span{
+        width: 50px;
+        height: 50px;
+        margin: 4px;
+
+    }
+
+    .calculator .clear{
+        grid-column: span 2;
+        width: 110px;
+        background:red;
+    }
+    
+    .calculator .plus{
+        grid-row: span 2;
+        height: 90px;
+    
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    .btn{
+        width: 70px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+
+    #logo{
+        font-size: 20px;
+    }
+
+  }
