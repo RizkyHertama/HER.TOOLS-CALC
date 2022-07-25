@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This page contain calculator I hope this tool can help you">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <!-- Bootstrap CSS -->
@@ -33,7 +34,7 @@
                     <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center justify-content-between w-100 px-3 align-items-center">
                         <li class="nav-item">
                             <div class="nav-button">
-                            <a href="">
+                            <a href="#">
                                 <button type="button" class="btn btn-dark" >
                                     <p>HOME</p>
                                     <i class="fa-solid fa-house " id="logo"></i>
@@ -46,7 +47,7 @@
                         
                         <li>
                             <div class="nav-button">
-                            <a href="">
+                            <a href="https://saweria.co/HERTOOLS">
                             <button type="button" class="btn btn-dark">
                                 <P>DONATE</P>
                                 <i class="fa-solid fa-hand-holding-dollar " id="logo"></i>
@@ -74,7 +75,7 @@
                 <!-- content -->
                 <div class="container">
                     <form action="" class="calculator" name="calc">
-                        <input type="text" class="value" readonly name="txt">
+                        <input type="text" class="value" readonly name="txt" aria-label="screen">
                         <span class="num clear" onclick="calc.txt.value=''">C</span>
                         <span class="num" onclick="calc.txt.value+='/'">/</span>
                         <span class="num" onclick="calc.txt.value+='*'">*</span>
